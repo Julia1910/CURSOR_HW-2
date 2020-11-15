@@ -7,22 +7,22 @@ public class Main {
 
     public static void main(String[] args) {
         System.out.println("First Task");
-        Integer[] array = {2,3,1,7,11};
+        Integer[] array = {2, 3, 1, 7, 11};
         showArray(array);
         reverseOrder(array);
 
         System.out.println("Second Task");
-        array = new Integer[] {-4, 2, 0, 6, -7};
+        array = new Integer[]{-4, 2, 0, 6, -7};
         showArray(array);
         getSumOfPositives(array);
 
         System.out.println("Third Task");
-        array = new Integer[] {1, 2, 4, 1};
+        array = new Integer[]{1, 2, 4, 1};
         showArray(array);
         getAverage(array);
 
         System.out.println("Fourth Task");
-        array = new Integer[]{3,2,3,1,4,2,8,3};
+        array = new Integer[]{3, 2, 3, 1, 4, 2, 8, 3};
         showArray(array);
         replaceDuplicate(array);
 
@@ -37,20 +37,20 @@ public class Main {
 
     private static void getSumOfPositives(Integer[] array) {
         int sum = 0;
-        for (int i: array) {
+        for (int i : array) {
             if (i > 0) {
-                sum+=i;
+                sum += i;
             }
         }
-        System.out.println("Sum of positives: " + sum  + "\n");
+        System.out.println("Sum of positives: " + sum + "\n");
     }
 
     private static void getAverage(Integer[] array) {
         double sum = 0;
-        for (int i: array) {
-            sum+=i;
+        for (int i : array) {
+            sum += i;
         }
-        System.out.println("Average: " + sum/array.length + "\n");
+        System.out.println("Average: " + sum / array.length + "\n");
     }
 
     private static void replaceDuplicate(Integer[] array) {
@@ -67,7 +67,7 @@ public class Main {
     }
 
     private static void showArray(Integer[] array) {
-        for (int i: array) {
+        for (int i : array) {
             System.out.print(i + " ");
         }
         System.out.println();
