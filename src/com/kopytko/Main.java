@@ -14,7 +14,7 @@ public class Main {
         System.out.println("Second Task");
         array = new Integer[]{-4, 2, 0, 6, -7};
         showArray(array);
-        System.out.println("Sum of positives: " + getSumOfPositives(array)  + "\n");
+        System.out.println("Sum of positives: " + getSumOfPositives(array) + "\n");
 
         System.out.println("Third Task");
         array = new Integer[]{1, 2, 4, 1};
@@ -50,7 +50,7 @@ public class Main {
         for (int i : array) {
             sum += i;
         }
-        return sum/array.length;
+        return sum / array.length;
     }
 
     private static void replaceDuplicate(Integer[] array) {
