@@ -14,12 +14,12 @@ public class Main {
         System.out.println("Second Task");
         array = new Integer[]{-4, 2, 0, 6, -7};
         showArray(array);
-        getSumOfPositives(array);
+        System.out.println("Sum of positives: " + getSumOfPositives(array)  + "\n");
 
         System.out.println("Third Task");
         array = new Integer[]{1, 2, 4, 1};
         showArray(array);
-        getAverage(array);
+        System.out.println("Average: " + getAverage(array) + "\n");
 
         System.out.println("Fourth Task");
         array = new Integer[]{3, 2, 3, 1, 4, 2, 8, 3};
@@ -35,22 +35,22 @@ public class Main {
         System.out.println();
     }
 
-    private static void getSumOfPositives(Integer[] array) {
+    private static int getSumOfPositives(Integer[] array) {
         int sum = 0;
         for (int i : array) {
             if (i > 0) {
                 sum += i;
             }
         }
-        System.out.println("Sum of positives: " + sum + "\n");
+        return sum;
     }
 
-    private static void getAverage(Integer[] array) {
-        double sum = 0;
+    private static int getAverage(Integer[] array) {
+        int sum = 0;
         for (int i : array) {
             sum += i;
         }
-        System.out.println("Average: " + sum / array.length + "\n");
+        return sum/array.length;
     }
 
     private static void replaceDuplicate(Integer[] array) {
